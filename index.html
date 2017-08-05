@@ -16,8 +16,13 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type='image/x-icon'>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,6 +71,13 @@ transition: all 500ms ease;
   background-size: cover;
 }
 
+@media screen and (max-width: 400px) {
+        #title {
+    font-size:20px;
+    }
+}
+
+
 </style>
 </head>
 
@@ -85,6 +97,7 @@ transition: all 500ms ease;
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top"><img style="position: relative;
     top: -10px; height: 60px; width: 120px; padding-bottom: 20px;" src="img/nobe_national_logo.png"></a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -95,13 +108,13 @@ transition: all 500ms ease;
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll raleway" href="#about">About</a>
+                        <a class="page-scroll raleway" href="#about">Calendar</a>
                     </li>
                     <li>
-                        <a class="page-scroll raleway" href="#services">Calendar</a>
+                        <a class="page-scroll raleway" href="#services">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll raleway" href="#contact">Team</a>
+                        <a class="page-scroll raleway" href="#contact">Sponsors</a>
                     </li>
                 </ul>
             </div>
@@ -115,9 +128,13 @@ transition: all 500ms ease;
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="raleway">National Organization for Business and Engineering</h1>
-                    <a style="position: relative;
-    top: 170px;" href="https://gopherlink.umn.edu/organization/2542" class="myButton">GopherLink</a>
+                    <h1 id="title" class="raleway">National Organization for Business and Engineering</h1>
+                    <div> <img style="padding-top: 20px; width:30%; height:30%;" src="img/UofMlogo.png">
+
+                    </div>
+                   <div style="padding-top: 10%;">
+                    <a href="https://gopherlink.umn.edu/organization/2542" class="myButton">GopherLink</a>
+                    </div>
                     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
                 </div>
@@ -130,20 +147,101 @@ transition: all 500ms ease;
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About</h1>
+                    <h1>Calendar</h1>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section style="height: auto; background-color: #363636;" id="services" class="services-section">
+       
         <div class="container">
+        <!-- <h1 class="raleway" style="text-align: center; color: #ffffff;">The Dream Team</h1> -->
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Calendar</h1>
-                </div>
+            	<div class="col-md-12">
+            	<h1 class="raleway" style="padding-bottom: 30px; color: #ffffff;">The Dream Team</h1>
+            	</div>
             </div>
+
+
+
+            <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Matt Martell</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Co-President</p>
+                </div>
+       
+      			<div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Ethan Schulz</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Co-President</p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Shawn Doherty</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Internal Affairs</p>
+                </div>
+
+            </div>
+
+            <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Sujeet Kohli</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Director of Technology</p>
+                </div>
+       
+      			<div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Cole Evanson</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Corporate Relations</p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Jarid Stolp</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Director of Marketing</p>
+                </div>
+
+            </div>
+
+            <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Nick Talberg</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Historian</p>
+                </div>
+       
+      			<div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Pratik Kamat</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Chapter Development</p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Ricky Siplia</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Treasurer</p>
+                </div>
+
+                <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="raleway" style="font-size: 30px; color: #ffffff;">Amy Olsen</h1>
+                <p class="raleway" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Spring Officer</p>
+                </div>
+
+            </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -152,7 +250,7 @@ transition: all 500ms ease;
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Meet the Team</h1>
+                    <h1>Sponsors</h1>
                 </div>
             </div>
         </div>
