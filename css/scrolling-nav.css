@@ -40,21 +40,27 @@ of those sections to manage the look and feel of the site. */
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
+    text-align: center;
+    background: #eee;
+}
+.calendar-section {
+    height: 100%;
+    padding-top: 50px;
     text-align: center;
     background: #eee;
 }
 
-.services-section {
+.team-section {
     height: 100%;
     padding-top: 50px;
     text-align: center;
     background: #fff;
 }
 
-.contact-section {
+.sponsor-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #eee;
 }
