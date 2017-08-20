@@ -9,21 +9,122 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>NOBE - Minnesota</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type='image/x-icon'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
 
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style type="text/css">
 
+
+a:hover {
+    color: #b71414 !important;
+   text-decoration: none !important;
+  -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+
+.linkedin:hover {opacity: .6;}
+
+.myButton {
+    background-color:transparent;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #9bf442;
+    display:inline-block;
+    cursor:pointer;
+    color:#9bf442;
+    font-family: raleway;
+    font-size:20px;
+    padding:16px 31px;
+    text-decoration: none;
+}
+.myButton:hover {
+    background-color:transparent;
+}
+.myButton:active {
+    position:relative;
+    top:1px;}
+
+.myButtonRed {
+    background-color:transparent;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #b71414;
+    display:inline-block;
+    cursor:pointer;
+    color:#b71414;
+    font-family: raleway;
+    font-size:20px;
+    padding:16px 31px;
+    text-decoration: none;
+}
+.myButtonRed:hover {
+    background-color:transparent;
+}
+.myButtonRed:active {
+    position:relative;
+    top:1px;}
+
+
+.raleway {font-family: 'Raleway', sans-serif;}
+.openSans {font-family: 'Open Sans', sans-serif;}
+.josefin {font-family: 'Josefin Sans', sans-serif;}
+#intro {
+  background: url(img/minneapolisSkyline2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media screen and (min-width: 421px) {
+        #title {font-size:50px;}
+        #umn {width: 40%; height: 40%;}
+}
+
+
+@media screen and (max-width: 420px) {
+        #title {font-size:20px;}
+        #umn {width: 60%; height: 60%;}
+        #aboutText {font-size: 15px;}
+    }
+
+@media screen and (min-width: 421px) {
+        #title {font-size:50px;}
+        #umn {width: 40%; height: 40%;}
+        #aboutText {font-size:25px;}
+    }
+
+
+
+.responsiveCal {position: relative; padding-bottom: 75%; height: 0; overflow: hidden;}
+ 
+.responsiveCal iframe {position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+
+</style>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -40,7 +141,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img style="position: relative;
+    top: -10px; height: 60px; width: 120px; padding-bottom: 20px;" src="img/nobe_national_logo.png"></a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,13 +154,16 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll openSans" href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll openSans" href="#events">EVENTS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll openSans" href="#team">TEAM</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll openSans" href="#sponsors">SPONSORS</a>
                     </li>
                 </ul>
             </div>
@@ -71,42 +177,168 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                    <div> <img id="umn" style="padding-top: 35px" class="wow fadeInUp" src="img/UMNLogo2.png"></div>
+                    <h1 style="color: white;" id="title" class="josefin wow fadeInUp">National Organization for Business and Engineering</h1>
+                    
+                   <div style="padding-top: 10%;">
+                    <a href="https://gopherlink.umn.edu/organization/2542" class="myButton wow fadeInUp" target="_blank">GopherLink</a>
+                    </div>
+
+                    <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+<section style="height: auto; background-color: #ffffff;" id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: #babdc1;"><strong>ABOUT <span style="color: #7ff122;">US</span></strong></h1>
+
+                    <div style="padding-bottom: 30px;" class="row wow fadeInUp">
+               
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <img style="padding-bottom: 10px;" src="img/meeting2.png">
+                </div>
+       
+                <div class="col-md-3">
+                    <img src="img/monitor.png">
+                </div>
+
+                <div class="col-md-3"></div>
+
+                    </div>
+                    <p id="aboutText" class="openSans wow fadeInUp" style="color: #6d6f72; padding-left: 10%; padding-right: 10%; padding-bottom: 25px;">The National Organization for Business and Engineering (NOBE) is a national society uniting <strong>business</strong>, <strong>management</strong>, and <strong>engineering</strong> organizations from universities coast to coast. NOBE strives to produce and refine leadership internally and develop professional skills in our members that can be translated into success in the business world.</p>
+
+                    <p id="aboutText" class="openSans wow fadeInUp" style="color: #6d6f72; padding-left: 10%; padding-right: 10%; padding-bottom: 25px;""><strong>Meetings</strong> will consist of presentations from our sponsors or workshops hosted by professionals - both of which are followed by discussion. </p>
+
+                    <p id="aboutText" class="openSans wow fadeInUp" style="color: #6d6f72; padding-left: 10%; padding-right: 10%; padding-bottom: 45px;"">Want to learn more? Visit our <span style="color: #b71414">GopherLink</span> page <a target="_blank" style="color: #7ff122" href="https://gopherlink.umn.edu/organization/2542">HERE!</a></p>
+
+                    <a style="margin-bottom: 45px;" href="https://umn.campuslabs.com/engage/organization/2542/contact" class="myButtonRed wow fadeInUp" target="_blank">Contact Us</a>
+                
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
+    <!-- Calendar Section -->
+    <section style="height: auto; background-color: #000000;" id="events" class="calendar-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                <h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: #ffffff;"><strong>NOBE <span style="color: #7ff122;">EVENTS</span></strong></h1>
+                    
+
+
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section style="height: auto; background-color: #363636;" id="team" class="team-section">
+       
+        <div class="container">
+        <!-- <h1 class="raleway" style="text-align: center; color: #ffffff;">The Dream Team</h1> -->
+            <div class="row">
+            	<div class="col-md-12">
+            	<h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: #ffffff;"><strong>THE DREAM <span style="color: #7ff122;">TEAM</span></strong></h1>
+            	</div>
+            </div>
+
+
+
+            <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Matt Martell <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Co-President</p>
+                </div>
+       
+      			<div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Ethan Schulz <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Co-President</p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Shawn Doherty <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Internal Affairs</p>
+                </div>
+
+            </div>
+
+            <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Sujeet Kohli <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Director of Technology</p>
+                </div>
+       
+      			<div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Cole Evanson <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Corporate Relations</p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Jarid Stolp <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Director of Marketing</p>
+                </div>
+
+            </div>
+
+            <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Nick Talberg <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Historian</p>
+                </div>
+       
+      			<div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Pratik Kamat <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Chapter Development</p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Ricky Siplia <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Treasurer</p>
+                </div>
+
+                <div class="row wow fadeInUp">
+               
+                <div class="col-md-4">
+                <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Amy Olsen <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Spring Officer</p>
+                &nbsp;
+                &nbsp;
+                </div>
+
+            </div>
+
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="sponsors" class="sponsor-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Sponsors</h1>
                 </div>
             </div>
         </div>
