@@ -34,6 +34,13 @@
     <![endif]-->
 <style type="text/css">
 
+#team {
+     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 a:hover {
     color: #b71414 !important;
@@ -45,7 +52,19 @@ a:hover {
 transition: all 500ms ease;
 }
 
-.linkedin:hover {opacity: .6;}
+.linkedin:hover {opacity: .6;
+ -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;}
+
+#affiliates:hover {opacity: .6;
+ -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;}
 
 .myButton {
     background-color:transparent;
@@ -56,7 +75,7 @@ transition: all 500ms ease;
     display:inline-block;
     cursor:pointer;
     color:#9bf442;
-    font-family: raleway;
+    font-family: Open Sans;
     font-size:20px;
     padding:16px 31px;
     text-decoration: none;
@@ -68,24 +87,24 @@ transition: all 500ms ease;
     position:relative;
     top:1px;}
 
-.myButtonRed {
+.myButtonGreen {
     background-color:transparent;
     -moz-border-radius:28px;
     -webkit-border-radius:28px;
     border-radius:28px;
-    border:1px solid #b71414;
+    border:1px solid #4adb67;
     display:inline-block;
     cursor:pointer;
-    color:#b71414;
-    font-family: raleway;
+    color:#4adb67;
+    font-family: Open Sans;
     font-size:20px;
     padding:16px 31px;
     text-decoration: none;
 }
-.myButtonRed:hover {
+.myButtonGreen:hover {
     background-color:transparent;
 }
-.myButtonRed:active {
+.myButtonGreen:active {
     position:relative;
     top:1px;}
 
@@ -93,36 +112,61 @@ transition: all 500ms ease;
 .raleway {font-family: 'Raleway', sans-serif;}
 .openSans {font-family: 'Open Sans', sans-serif;}
 .josefin {font-family: 'Josefin Sans', sans-serif;}
+.greenBorder{padding: 1px; border: 2px solid #7ff122;}
+
 #intro {
-  background: url(img/minneapolisSkyline2.jpg) no-repeat center center fixed; 
+  background: url(img/mplswallpaper1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-@media screen and (min-width: 421px) {
-        #title {font-size:50px;}
-        #umn {width: 40%; height: 40%;}
+
+#events {
+  background: url(img/mplswallpaperDark.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about {
+  background: url(img/mplswallpaperRed3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#team {
+  background: url(img/mplswallpaperGold.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#sponsors {
+  background: url(img/mplswallpaperGreen.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
-@media screen and (max-width: 420px) {
-        #title {font-size:20px;}
-        #umn {width: 60%; height: 60%;}
+@media screen and (max-width: 568px) {
+        #title, #eventName {font-size:20px;}
+        #umn {width: 20%; height: 20%;}
         #aboutText {font-size: 15px;}
     }
 
-@media screen and (min-width: 421px) {
-        #title {font-size:50px;}
-        #umn {width: 40%; height: 40%;}
-        #aboutText {font-size:25px;}
+@media screen and (min-width: 569px) {
+        #title, #eventName {font-size:50px;}
+        #umn {width: 20%; height: 20%;}
+        #aboutText {font-size:20px;}
     }
 
-
-
-.responsiveCal {position: relative; padding-bottom: 75%; height: 0; overflow: hidden;}
- 
-.responsiveCal iframe {position: absolute; top:0; left: 0; width: 100%; height: 100%;}
 
 </style>
 </head>
@@ -163,7 +207,7 @@ transition: all 500ms ease;
                         <a class="page-scroll openSans" href="#team">TEAM</a>
                     </li>
                     <li>
-                        <a class="page-scroll openSans" href="#sponsors">SPONSORS</a>
+                        <a class="page-scroll openSans" href="#sponsors">AFFILIATES</a>
                     </li>
                 </ul>
             </div>
@@ -177,11 +221,12 @@ transition: all 500ms ease;
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div> <img id="umn" style="padding-top: 35px" class="wow fadeInUp" src="img/UMNLogo2.png"></div>
-                    <h1 style="color: white;" id="title" class="josefin wow fadeInUp">National Organization for Business and Engineering</h1>
+                    
+                    <h1 style="color: white;" id="title" class="josefin wow fadeInUp"><strong>National Organization for Business and Engineering</strong></h1>
+                    <img id="umn" class="josefin wow fadeInUp" src="img/umnlogo4.png">
                     
                    <div style="padding-top: 10%;">
-                    <a href="https://gopherlink.umn.edu/organization/2542" class="myButton wow fadeInUp" target="_blank">GopherLink</a>
+                    <a href="https://gopherlink.umn.edu/organization/2542" class="myButton wow fadeInUp" target="_blank"><strong>GopherLink</strong></a>
                     </div>
 
                     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
@@ -192,11 +237,11 @@ transition: all 500ms ease;
     </section>
 
     <!-- About Section -->
-<section style="height: auto; background-color: #ffffff;" id="about" class="about-section">
+<section style="height: auto; opacity: 70%; background-color: white;" id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: #babdc1;"><strong>ABOUT <span style="color: #7ff122;">US</span></strong></h1>
+                    <h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: white; padding-top: 45px;"><strong>ABOUT <span style="color: #7ff122;">US</span></strong></h1>
 
                     <div style="padding-bottom: 30px;" class="row wow fadeInUp">
                
@@ -212,13 +257,13 @@ transition: all 500ms ease;
                 <div class="col-md-3"></div>
 
                     </div>
-                    <p id="aboutText" class="openSans wow fadeInUp" style="color: #6d6f72; padding-left: 10%; padding-right: 10%; padding-bottom: 25px;">The National Organization for Business and Engineering (NOBE) is a national society uniting <strong>business</strong>, <strong>management</strong>, and <strong>engineering</strong> organizations from universities coast to coast. NOBE strives to produce and refine leadership internally and develop professional skills in our members that can be translated into success in the business world.</p>
+                    <p id="aboutText" class="openSans wow fadeInUp" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 25px;">The National Organization for Business and Engineering (NOBE) is a national society uniting <strong>business</strong>, <strong>management</strong>, and <strong>engineering</strong> organizations from universities coast to coast. NOBE strives to produce and refine leadership internally and develop professional skills in our members that can be translated into success in the business world.</p>
 
-                    <p id="aboutText" class="openSans wow fadeInUp" style="color: #6d6f72; padding-left: 10%; padding-right: 10%; padding-bottom: 25px;""><strong>Meetings</strong> will consist of presentations from our sponsors or workshops hosted by professionals - both of which are followed by discussion. </p>
+                    <p id="aboutText" class="openSans wow fadeInUp" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 25px;""><strong>Meetings</strong> consist of presentations from our sponsors or workshops hosted by professionals - both of which are followed by discussion. </p>
 
-                    <p id="aboutText" class="openSans wow fadeInUp" style="color: #6d6f72; padding-left: 10%; padding-right: 10%; padding-bottom: 45px;"">Want to learn more? Visit our <span style="color: #b71414">GopherLink</span> page <a target="_blank" style="color: #7ff122" href="https://gopherlink.umn.edu/organization/2542">HERE!</a></p>
+                    <p id="aboutText" class="openSans wow fadeInUp" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 45px;"">Want to learn more? Visit our GopherLink page <a target="_blank" style="color: #4adb67" href="https://gopherlink.umn.edu/organization/2542">HERE!</a></p>
 
-                    <a style="margin-bottom: 45px;" href="https://umn.campuslabs.com/engage/organization/2542/contact" class="myButtonRed wow fadeInUp" target="_blank">Contact Us</a>
+                    <a style="margin-bottom: 75px;" href="https://umn.campuslabs.com/engage/organization/2542/contact" class="myButtonGreen wow fadeInUp" target="_blank">Contact Us</a>
                 
                 </div>
             </div>
@@ -229,10 +274,50 @@ transition: all 500ms ease;
     <section style="height: auto; background-color: #000000;" id="events" class="calendar-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                <h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: #ffffff;"><strong>NOBE <span style="color: #7ff122;">EVENTS</span></strong></h1>
-                    
+                <div class="col-md-12">
+                <h1 class="josefin" style="padding-bottom: 60px; padding-top:45px; color: #ffffff;"><strong>NOBE <span style="color: #7ff122;">EVENTS</span></strong></h1>
+           
+            <!--New Row-->
+            <div style="padding-bottom: 35px;" class="row wow fadeInUp">
+            <div class="col-md-3">
+<img src="img/McKinsey2.png" alt="Name1" style="width:80%; height:80%; border-radius: 50%;">
+</div>
 
+<div class="col-md-9">
+<h1 id="eventName" style="color: white;" class="josefin">McKinsey & Company | <span style="color: #7ff122;">Sept. 8, 2017</span></h1>
+<h1 id="eventName" style="color: white;" class="josefin"><i>Location TBA</i></h1>
+<p id="aboutText" class="openSans" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 25px; padding-top: 10px;">NOBE has partnered with the Undergraduate Consulting Club to bring you McKinsey & Company, a top worldwide management consulting firm! Come to learn, network, and have a good time!</p>
+            </div>
+            </div>
+            <!--End Row-->
+
+            <!--New Row-->
+            <div style="padding-bottom: 45px;" class="row wow fadeInUp">
+            <div class="col-md-3">
+<img src="img/nobeEvent.png" alt="Name1" style="width:80%; height:80%; border-radius: 50%;">
+            </div>
+
+            <div class="col-md-9">
+<h1 id="eventName" style="color: white;" class="josefin">NOBE Kickoff | <span style="color: #7ff122;">Sept. 14, 2017</span></h1>
+<h1 id="eventName" style="color: white;" class="josefin"><i>Bruininks Hall 220, 6 - 7PM</i></h1>
+<p id="aboutText" class="openSans" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 25px; padding-top: 10px;">Learn about what NOBE does, what our upcoming events are, and how to get involved!</p>
+            </div>
+            </div>
+            <!--End Row-->       
+
+            <!--New Row-->
+            <div style="padding-bottom: 35px;" class="row wow fadeInUp">
+            <div class="col-md-3">
+<img src="img/emerson.png" alt="Name1" style="width:80%; height:80%; border-radius: 50%;">
+            </div>
+
+            <div class="col-md-9">
+<h1 id="eventName" style="color: white;" class="josefin">Emerson | <span style="color: #7ff122;">Sept. 21, 2017</span></h1>
+<h1 id="eventName" style="color: white;" class="josefin"><i>Location TBA</i></h1>
+<p id="aboutText" class="openSans" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 25px; padding-top: 10px;">Learn about the Fortune 500 company, Emerson. Emerson manufactures and provides engineering services for a wide range of industrial, commercial, and consumer markets. They currently have approximately 111,000 employees and 205 manufacturing locations worldwide!</p>
+            </div>
+            </div>
+            <!--End Row-->   
 
                 </div>
             </div>
@@ -243,84 +328,83 @@ transition: all 500ms ease;
     <section style="height: auto; background-color: #363636;" id="team" class="team-section">
        
         <div class="container">
-        <!-- <h1 class="raleway" style="text-align: center; color: #ffffff;">The Dream Team</h1> -->
             <div class="row">
             	<div class="col-md-12">
-            	<h1 class="josefin wow fadeInUp" style="padding-bottom: 30px; color: #ffffff;"><strong>THE DREAM <span style="color: #7ff122;">TEAM</span></strong></h1>
+            	<h1 class="josefin wow fadeInUp" style="padding-bottom: 60px; padding-top:60px; color: #ffffff;"><strong>THE DREAM <span style="color: #7ff122;">TEAM</span></strong></h1>
             	</div>
             </div>
 
 
 
-            <div class="row wow fadeInUp">
+            <div class="row">
                
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
                 <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Matt Martell <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Co-President</p>
                 </div>
        
-      			<div class="col-md-4">
+      			<div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Ethan Schulz <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Ethan Schulz <a target="_blank" href="https://www.linkedin.com/in/schulzethan/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Co-President</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Shawn Doherty <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Shawn Doherty <a target="_blank" href="https://www.linkedin.com/in/dohertyshawn/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Internal Affairs</p>
                 </div>
 
             </div>
 
-            <div class="row wow fadeInUp">
+            <div class="row">
                
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Sujeet Kohli <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Sujeet Kohli <a target="_blank" href="https://www.linkedin.com/in/sujeetkohli/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Director of Technology</p>
                 </div>
        
-      			<div class="col-md-4">
+      			<div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Cole Evanson <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Cole Evanson <a target="_blank" href="https://www.linkedin.com/in/cole-evanson-4a872b13a/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Corporate Relations</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Jarid Stolp <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Jarid Stolp <a target="_blank" href="https://www.linkedin.com/in/jarid-stolp/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Director of Marketing</p>
                 </div>
 
             </div>
 
-            <div class="row wow fadeInUp">
+            <div class="row">
                
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Nick Talberg <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Nick Talberg <a target="_blank" href="https://www.linkedin.com/in/nicholas-talberg-91407a136/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Historian</p>
                 </div>
        
-      			<div class="col-md-4">
+      			<div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name2" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Pratik Kamat <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Pratik Kamat <a target="_blank" href="#"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">VP of Chapter Development</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name3" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Ricky Siplia <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Ricky Siplia <a target="_blank" href="#"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Treasurer</p>
                 </div>
 
-                <div class="row wow fadeInUp">
+                <div class="row">
                
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp">
                 <img src="img/defaultHeadshot.png" alt="Name1" style="width:60%; height:60%; border-radius: 50%;">
-                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Amy Olsen <a target="_blank" href="https://www.linkedin.com/in/matthew-martell-835b62104/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
+                <h1 class="openSans" style="font-size: 30px; color: #ffffff;">Amy Olsen <a target="_blank" href="https://www.linkedin.com/in/amy-olsen-b294bb128/"><img style="height: 25px; width: 25px;" class="wow fadeInUp linkedin" src="img/Linkedin-Icon.png"></a></h1>
                 <p class="openSans" style="color: #7ff122; font-size: 15px; padding-bottom: 20px;">Spring Officer</p>
                 &nbsp;
                 &nbsp;
@@ -334,11 +418,56 @@ transition: all 500ms ease;
     </section>
 
     <!-- Contact Section -->
-    <section id="sponsors" class="sponsor-section">
+    <section id="sponsors" class="sponsor-section" style="height: auto;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Sponsors</h1>
+                    <h1 class="josefin wow fadeInUp" style="padding-bottom: 60px; padding-top:45px; color: white;"><strong>EVENT <span style="color: #7ff122;">AFFILIATES</span></strong></h1>
+<div class="row wow fadeInUp">
+               
+                <div class="col-md-4" style="padding-bottom: 25px;">
+                <a target="_blank" href="https://www2.deloitte.com/us/en/pages/consulting/solutions/about-deloitte-consulting-services.html?id=us:2ps:3gl:confidence:eng:cons:111215:nonem:na:ltowsqU6:881105176:87537179949:e:Branded:Branded_Consulting_Exact:br">
+                <img src="img/affiliates/deloitteA.png" alt="Name1" style="height: 100%; width: 100%;" class="greenBorder" id="affiliates">
+                </a>
+                </div>
+       
+                <div class="col-md-4" style="padding-bottom: 25px;">
+                <a target="_blank" href="http://www.mckinsey.com/">
+                <img src="img/affiliates/mckinseyA.png" alt="Name1" style="height: 100%; width: 100%;" class="greenBorder" id="affiliates">
+                </a>
+                </div>
+
+                <div class="col-md-4" style="padding-bottom: 25px;">
+                <a target="_blank" href="http://www.emerson.com/en-us">
+                <img src="img/affiliates/emersonA.png" alt="Name1" style="height: 100%; width: 100%;" class="greenBorder" id="affiliates">
+                </a>
+                </div>
+
+</div>
+
+
+
+<div class="row wow fadeInUp">
+               
+                <div class="col-md-4" style="padding-bottom: 25px;">
+                <a target="_blank" href="http://www.bain.com/">
+                <img src="img/affiliates/bainA.png" alt="Name1" style="height: 100%; width: 100%;" class="greenBorder" id="affiliates">
+                </a>
+                </div>
+       
+                <div class="col-md-4" style="padding-bottom: 25px;">
+                <a target="_blank" href="https://www.bcg.com/">
+                <img src="img/affiliates/bcgA.png" alt="Name1" style="height: 100%; width: 100%;" class="greenBorder" id="affiliates">
+                </a>
+                </div>
+
+                <div class="col-md-4" style="padding-bottom: 25px;">
+                <a target="_blank" href="http://www.westmonroepartners.com/">
+                <img src="img/affiliates/westA.png" alt="Name1" style="height: 100%; width: 100%;" class="greenBorder" id="affiliates">
+                </a>
+                </div>
+
+</div>
                 </div>
             </div>
         </div>
