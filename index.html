@@ -154,6 +154,15 @@ transition: all 500ms ease;}
   background-size: cover;
 }
 
+#footer {
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(black, black, #202020); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, black, #202020); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, black, #202020); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, black, #202020); /* Standard syntax */
+  border-color: #212121;
+}
+
 
 @media screen and (max-width: 568px) {
         #title, #header {font-size:20px;}
@@ -234,7 +243,7 @@ transition: all 500ms ease;}
     </section>
 
     <!-- About Section -->
-<section style="height: auto; opacity: 70%; background-color: white;" id="about" class="about-section">
+<section style="height: auto;" id="about" class="about-section">
 
 
         <div class="container">
@@ -416,7 +425,7 @@ transition: all 500ms ease;}
     </section>
 
     <!-- Contact Section -->
-    <section id="sponsors" class="sponsor-section" style="height: auto;">
+    <section id="sponsors" class="sponsor-section" style="height: auto; padding-bottom: 70px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -493,6 +502,15 @@ transition: all 500ms ease;}
             </div>
         </div>
     </section>
+
+<section style="height: auto; padding-top: 15px; padding-bottom: 15px;  border-style: solid;
+    border-top: solid #a9cc56;" id="footer" class="footer-section">
+<div class="container">
+<img style="height: 30px; width: 30px; float:left;" src="img/favicon.png">
+<p class="openSans" style="color: grey; float: right;" >Copyright © 2017 NOBE UMN</p>
+</div>    
+</section>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
