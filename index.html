@@ -42,7 +42,7 @@
     overflow-x: hidden;
 }
 
-a:hover {
+#nav:hover {
     color: #a9cc56 !important;
    text-decoration: none !important;
   -webkit-transition: all 500ms ease;
@@ -66,47 +66,36 @@ transition: all 500ms ease;}
 -o-transition: all 500ms ease;
 transition: all 500ms ease;}
 
-.myButton {
-    background-color:transparent;
-    -moz-border-radius:28px;
-    -webkit-border-radius:28px;
-    border-radius:28px;
-    border:1px solid #9bf442;
-    display:inline-block;
-    cursor:pointer;
-    color:#9bf442;
-    font-family: Open Sans;
-    font-size:20px;
-    padding:16px 31px;
-    text-decoration: none;
+.button {
+    background-color: #7a0019; /* Green */
+    opacity: .8;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
 }
-.myButton:hover {
-    background-color:transparent;
-}
-.myButton:active {
-    position:relative;
-    top:1px;}
 
-.myButtonGreen {
-    background-color:transparent;
-    -moz-border-radius:28px;
-    -webkit-border-radius:28px;
-    border-radius:28px;
-    border:1px solid #4adb67;
-    display:inline-block;
-    cursor:pointer;
-    color:#4adb67;
-    font-family: Open Sans;
-    font-size:20px;
-    padding:16px 31px;
-    text-decoration: none;
+.button1 {
+    background-color: #7a0019; 
+    opacity: .8;
+    color: white; 
+    border: 2px solid #7a0019;
+    border-radius: 8px;
 }
-.myButtonGreen:hover {
-    background-color:transparent;
+
+.button1:hover {
+    background-color: transparent;
+    color: white;
+    
 }
-.myButtonGreen:active {
-    position:relative;
-    top:1px;}
 
 
 .raleway {font-family: 'Raleway', sans-serif;}
@@ -207,16 +196,16 @@ transition: all 500ms ease;}
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll openSans" href="#about"><strong>ABOUT</strong></a>
+                        <a id="nav" class="page-scroll openSans" href="#about"><strong>ABOUT</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll openSans" href="#events"><strong>EVENTS</strong></a>
+                        <a id="nav" class="page-scroll openSans" href="#events"><strong>EVENTS</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll openSans" href="#team"><strong>TEAM</strong></a>
+                        <a id="nav" class="page-scroll openSans" href="#team"><strong>TEAM</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll openSans" href="#sponsors"><strong>AFFILIATES</strong></a>
+                        <a id="nav" class="page-scroll openSans" href="#sponsors"><strong>AFFILIATES</strong></a>
                     </li>
                 </ul>
             </div>
@@ -235,7 +224,7 @@ transition: all 500ms ease;}
                     <img id="umn" class="josefin wow fadeInUp" src="img/umnlogo4.png">
                     
                    <div style="padding-top: 10%; padding-bottom: 20%;">
-                    <a href="https://gopherlink.umn.edu/organization/2542" class="myButton wow fadeInUp" target="_blank"><strong>GopherLink</strong></a>
+                    <a href="https://gopherlink.umn.edu/organization/2542" class="button button1 wow fadeInUp openSans" target="_blank"><strong>GopherLink</strong></a>
                     </div>
                 </div>
             </div>
@@ -259,7 +248,7 @@ transition: all 500ms ease;}
 
                     <p id="aboutText" class="openSans wow fadeInUp" style="color: white; padding-left: 10%; padding-right: 10%; padding-bottom: 45px;"">Want to learn more? Visit our GopherLink page <a target="_blank" style="color: #4adb67" href="https://gopherlink.umn.edu/organization/2542">HERE!</a></p>
 
-                    <a style="margin-bottom: 75px;" href="https://umn.campuslabs.com/engage/organization/2542/contact" class="myButtonGreen wow fadeInUp" target="_blank">Contact Us</a>
+                    <a style="margin-bottom: 75px;" href="https://umn.campuslabs.com/engage/organization/2542/contact" class="button button1 wow fadeInUp openSans" target="_blank">Contact Us</a>
                 
                 </div>
             </div>
